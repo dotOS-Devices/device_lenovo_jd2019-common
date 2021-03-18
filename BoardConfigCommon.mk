@@ -167,6 +167,9 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 # Inherit from the proprietary version
 -include vendor/lenovo/sdm710-common/BoardConfigVendor.mk
 
+# SurfaceFlinger
+TARGET_USE_AOSP_SURFACEFLINGER := true
+
 # Init
 TARGET_INIT_VENDOR_LIB := //$(COMMON_PATH):libinit_sdm710
 TARGET_RECOVERY_DEVICE_MODULES := libinit_sdm710
