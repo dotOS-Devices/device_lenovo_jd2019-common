@@ -24,6 +24,9 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-dot
 
+PRODUCT_PACKAGES += \
+    NoCutoutOverlay
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl:32 \
