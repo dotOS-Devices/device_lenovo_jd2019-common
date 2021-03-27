@@ -14,10 +14,10 @@
 // limitations under the License.
 
 cc_binary {
-    name: "vendor.lineage.livedisplay@2.0-service.lenovo_sdm710",
+    name: "vendor.lineage.livedisplay@2.1-service.lenovo_sdm710",
     defaults: ["hidl_defaults"],
-    vintf_fragments: ["vendor.lineage.livedisplay@2.0-service.lenovo_sdm710.xml"],
-    init_rc: ["vendor.lineage.livedisplay@2.0-service.lenovo_sdm710.rc"],
+    vintf_fragments: ["vendor.lineage.livedisplay@2.1-service.lenovo_sdm710.xml"],
+    init_rc: ["vendor.lineage.livedisplay@2.1-service.lenovo_sdm710.rc"],
     relative_install_path: "hw",
     srcs: [
         "SunlightEnhancement.cpp",
@@ -30,5 +30,6 @@ cc_binary {
         "libhidlbase",
         "libutils",
         "vendor.lineage.livedisplay@2.0",
+        "vendor.lineage.livedisplay@2.1",
     ],
 }
