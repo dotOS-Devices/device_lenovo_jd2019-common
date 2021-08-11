@@ -14,5 +14,23 @@
     "repository"  : "HsyHusker/vendor_lenovo-firmware",
     "target_path" : "vendor/lenovo-firmware",
     "branch"      : "dot11",
+  },
+  {
+    "repository"  : "PixelExperience/hardware_qcom-caf_sdm845_media",
+    "target_path" : "hardware/qcom-caf/sdm845-pe/media",
+    "branch"      : "eleven",
+    "remote"      : "github"
+  },
+  {
+    "repository"  : "PixelExperience/hardware_qcom-caf_sdm845_audio",
+    "target_path" : "hardware/qcom-caf/sdm845-pe/audio",
+    "branch"      : "eleven",
+    "remote"      : "github"
+  },
+  {
+    "repository"  : "PixelExperience/hardware_qcom-caf_sdm845_display",
+    "target_path" : "hardware/qcom-caf/sdm845-pe/display",
+    "branch"      : "eleven",
+    "remote"      : "github"
   }
 ]
