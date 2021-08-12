@@ -1,8 +1,0 @@
-[
-  {
-    "remote": "pixel-devices-blobs",
-    "repository": "vendor_lenovo_sdm710-common",
-    "target_path": "vendor/lenovo/sdm710-common",
-    "branch": "eleven"
-  }
-]
