@@ -7,29 +7,29 @@
   {
     "repository"  : "kernel_lenovo_sdm710",
     "target_path" : "kernel/lenovo/sdm710",
-    "branch"      : "dot11",
+    "branch"      : "dot11"
   },
   {
     "remote"      : "gitlab"
     "repository"  : "HsyHusker/vendor_lenovo-firmware",
     "target_path" : "vendor/lenovo-firmware",
-    "branch"      : "dot11",
+    "branch"      : "dot11"
   },
   {
     "repository"  : "PixelExperience/hardware_qcom-caf_sdm845_media",
-    "target_path" : "hardware/qcom-caf/sdm845-pe/media",
+    "target_path" : "hardware/qcom-caf/sdm845-lenovo/media",
     "branch"      : "eleven",
     "remote"      : "github"
   },
   {
     "repository"  : "PixelExperience/hardware_qcom-caf_sdm845_audio",
-    "target_path" : "hardware/qcom-caf/sdm845-pe/audio",
+    "target_path" : "hardware/qcom-caf/sdm845-lenovo/audio",
     "branch"      : "eleven",
     "remote"      : "github"
   },
   {
     "repository"  : "PixelExperience/hardware_qcom-caf_sdm845_display",
-    "target_path" : "hardware/qcom-caf/sdm845-pe/display",
+    "target_path" : "hardware/qcom-caf/sdm845-lenovo/display",
     "branch"      : "eleven",
     "remote"      : "github"
   }
