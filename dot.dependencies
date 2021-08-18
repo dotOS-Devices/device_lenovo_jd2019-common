@@ -1,36 +1,38 @@
 [
   {
-    "repository"  : "vendor_lenovo_sdm710-common",
-    "target_path" : "vendor/lenovo/sdm710-common",
-    "branch"      : "dot11"
+    "repository": "vendor_lenovo_jd2019-common",
+    "target_path": "vendor/lenovo/sdm710-common",
+    "branch": "dot11",
+    "remote": "dotOS-Devices"
   },
   {
-    "repository"  : "kernel_lenovo_sdm710",
-    "target_path" : "kernel/lenovo/sdm710",
-    "branch"      : "dot11"
+    "repository": "kernel_lenovo_jd2019",
+    "target_path": "kernel/lenovo/sdm710",
+    "branch": "dot11",
+    "remote": "dotOS-Devices"
   },
   {
-    "remote"      : "gitlab"
-    "repository"  : "HsyHusker/vendor_lenovo-firmware",
-    "target_path" : "vendor/lenovo-firmware",
-    "branch"      : "dot11"
+    "repository": "vendor_lenovo-firmware",
+    "target_path": "vendor/lenovo-firmware",
+    "branch": "dot11",
+    "remote": "dotos-devices-gitlab"
   },
   {
-    "repository"  : "PixelExperience/hardware_qcom-caf_sdm845_media",
-    "target_path" : "hardware/qcom-caf/sdm845-lenovo/media",
-    "branch"      : "eleven",
-    "remote"      : "github"
+    "repository": "PixelExperience/hardware_qcom-caf_sdm845_media",
+    "target_path": "hardware/qcom-caf/sdm845-lenovo/media",
+    "branch": "eleven",
+    "remote": "github"
   },
   {
-    "repository"  : "PixelExperience/hardware_qcom-caf_sdm845_audio",
-    "target_path" : "hardware/qcom-caf/sdm845-lenovo/audio",
-    "branch"      : "eleven",
-    "remote"      : "github"
+    "repository": "PixelExperience/hardware_qcom-caf_sdm845_audio",
+    "target_path": "hardware/qcom-caf/sdm845-lenovo/audio",
+    "branch": "eleven",
+    "remote": "github"
   },
   {
-    "repository"  : "PixelExperience/hardware_qcom-caf_sdm845_display",
-    "target_path" : "hardware/qcom-caf/sdm845-lenovo/display",
-    "branch"      : "eleven",
-    "remote"      : "github"
+    "repository": "PixelExperience/hardware_qcom-caf_sdm845_display",
+    "target_path": "hardware/qcom-caf/sdm845-lenovo/display",
+    "branch": "eleven",
+    "remote": "github"
   }
 ]
