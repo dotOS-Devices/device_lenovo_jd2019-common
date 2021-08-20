@@ -24,3 +24,6 @@
 /sys/ontim_bootinfo/gps_lna                  u:object_r:sysfs_gps:s0
 /sys/ontim_bootinfo/gps_reset                u:object_r:sysfs_gps:s0
 /dev/ttyHS1                                  u:object_r:gps_device:s0
+
+# HBM
+/sys/devices/platform/soc/soc:qcom,dsi-display/hbm                   u:object_r:sysfs_hbm:s0
