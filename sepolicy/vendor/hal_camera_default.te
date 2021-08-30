@@ -12,3 +12,5 @@ allow hal_camera_default sysfs_leds:lnk_file read;
 userdebug_or_eng(`
   get_prop(hal_camera_default, sensors_dbg_prop)
 ')
+
+allow cameraserver property_socket:sock_file { write };
