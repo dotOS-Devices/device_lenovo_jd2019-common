@@ -53,6 +53,16 @@ on early-init
     # Load WIGIG platform driver
     exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules msm_11ad_proxy
 
+    # Boost schedtune
+    write /dev/stune/schedtune.boost 50
+    write /dev/stune/schedtune.prefer_idle 1
+
+    # Boost I/O performance
+    write /sys/block/mmcblk0/queue/scheduler "noop"
+    write /sys/block/mmcblk0/queue/read_ahead_kb 2048
+    write /sys/block/mmcblk0/queue/nr_requests 256
+    write /sys/block/mmcblk0/queue/iostats 0
+
 on init
 
     # Support legacy paths
@@ -68,6 +78,13 @@ on init
 
 on post-fs
     chmod 0755 /sys/kernel/debug/tracing
+
+    # Start services for bootanim
+    start surfaceflinger
+    start bootanim
+    start vendor.hwcomposer-2-1
+    start vendor.configstore-hal
+    start vendor.qti.hardware.display.allocator
 
 on early-boot
     # set RLIMIT_MEMLOCK to 64MB
@@ -256,6 +273,10 @@ on boot
 
     # Create hvdcp_opti directory
     mkdir /mnt/vendor/persist/hvdcp_opti 0770 root system
+
+    # Restore default I/O tuning
+    write /sys/block/mmcblk0/queue/scheduler "bfq"
+    write /sys/block/mmcblk0/queue/nr_requests 128
 
     #sensors log dir
     mkdir /data/vendor/sensors
